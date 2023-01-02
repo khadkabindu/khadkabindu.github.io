@@ -3,19 +3,19 @@ eField = form.querySelector(".email"),
 eInput = eField.querySelector("input"),
 pField = form.querySelector(".password"),
 pInput = pField.querySelector("input");
-
+nField = form.querySelector(".fullname"),
+nInput = nField.querySelector("input")
 
 form.onsubmit = (e)=>{
   e.preventDefault(); 
   (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
   (pInput.value == "") ? pField.classList.add("shake", "error") : checkPassword();
-  
-
+  (nInput.value == "") ? nField.classList.add("shake", "error") : checkName();
 
   setTimeout(()=>{ 
     eField.classList.remove("shake");
     pField.classList.remove("shake");
-    
+    nField.classList.remove("shake");
   }, 500);
 
   eInput.onkeyup = ()=>{checkEmail();} 
@@ -33,8 +33,17 @@ form.onsubmit = (e)=>{
       eField.classList.remove("error");
       eField.classList.add("valid");
     }
-  } 
+  }
 
+  function checkName(){
+    if(nInput.value == ""){ 
+      nField.classList.add("error");
+      nField.classList.remove("valid");
+    }else{ 
+      nField.classList.remove("error");
+      nField.classList.add("valid");
+    }
+  }
 
   function checkPassword(){ 
     if(pInput.value == ""){ 
