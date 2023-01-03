@@ -197,6 +197,14 @@
             }
             
             #section2 {
+                height: 500px;
+                background: #edeff1;
+                display: inline-block;
+                width: 100%;
+                padding-left: 110px;
+            }
+
+            #section{
                 height: 320px;
                 background: black;
                 display: inline-block;
@@ -205,7 +213,7 @@
             }
             
             #section3 {
-                height: 530px;
+                height: 550px;
                 display: inline-block;
                 width: 100%;
                 padding-left: 110px;
@@ -219,6 +227,13 @@
                 width: 100%;
             }
 
+
+            #section6 {
+                height: 900px;
+                background: #f1eae3;
+                display: inline-block;
+                width: 100%;
+            }
             #section5 {
                 display: inline-block;
                 width: 100%;
@@ -322,6 +337,8 @@
                 font-size: 20px;
             }
 
+           
+
 
             .sized-box{
                 height: 8px;
@@ -329,6 +346,13 @@
 
             .sized-box2{
                 height: 3px;
+            } 
+
+
+            .column-space-container5{
+                width: 25px;
+                background-color: #edeef1;
+
             }
 
             
