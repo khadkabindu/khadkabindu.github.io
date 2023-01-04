@@ -350,11 +350,45 @@
 
             }
 
-            .circle-avatar{
-                background: black;
+           
+
+
+            .avatar {
+                vertical-align: middle;
                 width: 50px;
                 height: 50px;
-                border-radius: 100%;
-            }
+                border-radius: 50%;
+              }
 
+
+              .card2 {
+                background-color: white;
+                transition: 0.3s;
+                border-radius: 30px;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+                width: 27%;
+                padding-top: 10px;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-bottom: 20px;
+              }
+              
+              .card2:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+              }
+
+              .column-space-container6{
+                  height: 8px;
+                  background-color: white;
+              }
+
+              .column-space-container7{
+                height: 3px;
+                background-color: white;
+            }
+            .column-space-container8{
+                margin: 5px;
+                width: 40px;
+                background-color: white;
+            }
             
